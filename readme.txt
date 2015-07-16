@@ -35,8 +35,8 @@ Yes, you can specify custom email,name,subject,success message and error message
 
 == Screenshots ==
 
-1. Oviex Contact Form on page
-2. Oviex Contact Form Settings page
+1. Oviex Contact Form Settings page
+2. Oviex Contact Form on page
 
 == Changelog ==
 = 1.0 =
