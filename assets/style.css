@@ -1,0 +1,28 @@
+#ocf-wrapper{
+width:70%;
+}
+#ocf-wrppar .ocf_tel_input,#ocf-wrppar .ocf_email_input
+#ocf-wrppar .ocf_first_name_input,#ocf-wrppar textarea, #ocf-wrapper .ocf_last_name_input{
+margin-bottom:20px;
+}
+.ocf_first_name_input{
+	width:49%;
+	float:left;
+	margin-right:5px;
+}
+.ocf_last_name_input{
+	width:49%;
+}
+.ocf_tel_input{
+	width:99%;
+}
+
+.ocf_email_input{
+	width:99%;
+}
+
+.ocf_submit_input{
+	background: #4386f9 none repeat scroll 0 0 !important;
+    border: medium none #4386f9 !important;
+	font-weight: 600;
+}
