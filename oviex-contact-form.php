@@ -3,12 +3,12 @@
 Plugin Name: Oviex Contact Form
 Plugin URI: http://oviex.com
 Description: Oviex Contact form is a simple contact form which works out of the box. Use shortcode on posts or pages to generate Oviex Contact Form.
-Version: 1.0
+Version: 1.1
 Author: Umang Goyal
 Author URI: http://oviex.com
 */
 
-$db_version = '1.0';
+$db_version = '1.1';
 	
 	add_action('wp_enqueue_scripts', 'style_front_data');
 	
@@ -135,6 +135,7 @@ function Oviex_general_info()
 							
 							<div class="submit-container">
 								<input class="submit-button btn button ocf_submit_input" type="submit" name="submit" value="SUBMIT">
+								<label id="loading" style="margin-left:30px;"></label>
 							</div><br>
 					</fieldset>
 						
@@ -172,6 +173,9 @@ function Oviex_general_info()
 					   cache: false,
 					   url: ajaxurl,
 					   data: { name: $name, last_name: $last_name, email: $email, phone: $phone, ip: $ip, comment : $comment, ocf_squeeze_form: $ocf_squeeze_form , action: 'ocf_form'},
+					   beforeSend: function(){
+										jQuery('#loading').html('Submitting..');
+									},
 					   success: function(res)
 						{
 							if(res == 1 || res == '1' )
@@ -179,6 +183,7 @@ function Oviex_general_info()
 								
 								jQuery("#mail-status").html(success_message);
 								jQuery("#subscription").hide();
+								jQuery('#loading').html('');
 								//alert("You will soon receive an e-mail with the confirmation link");
 							}
 							else
