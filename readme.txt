@@ -1,5 +1,5 @@
 === Oviex Contact Form ===
-Contributors: umanggoyal
+Contributors: umang.goyal
 Donate link: http://oviex.com/
 Tags: contact form, simple contact form, oviex contact form, email contact form, contact us form, email contact us form,
 Requires at least: 3.0.1
